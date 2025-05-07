@@ -1,0 +1,151 @@
+
+## 🎯 **Objectif du jour**
+
+Apprendre à déclarer des variables, identifier leurs types, manipuler les chaînes et les nombres, et utiliser les structures complexes comme tableaux et objets en JavaScript.
+
+
+
+### 1. ✅ **Déclaration de variable**
+
+```javascript
+let nom = "Alice"; // modifiable
+const age = 25;    // constante (ne peut pas être modifiée)
+var ville = "Paris"; // ancienne façon, à éviter aujourd’hui
+```
+
+* `let` : à utiliser pour des variables changeantes
+* `const` : pour une valeur qui ne change pas
+* `var` : obsolète, à éviter
+
+
+
+### 2. 📦 **Types de variables**
+
+Voici les principaux **types de données** :
+
+| Type                | Exemple                               |
+| ------------------- | ------------------------------------- |
+| Number              | `let x = 10;`                         |
+| String              | `let nom = "Jean";`                   |
+| Boolean             | `let actif = true;`                   |
+| Null                | `let vide = null;`                    |
+| Undefined           | `let rien;`                           |
+| Array               | `let notes = [10, 15, 20];`           |
+| Array dans un array | `let classes = [[10, 12], [13, 15]];` |
+| Object              | `let personne = {nom: "Ali"};`        |
+| Objet dans un objet | `let user = {profil: {nom: "Ali"}};`  |
+
+
+
+### 3. 💬 **Backticks (Template literals)**
+
+Utilisés pour **insérer des variables dans une chaîne** :
+
+```javascript
+let nom = "Fatou";
+let message = `Bonjour ${nom}, bienvenue !`;
+console.log(message); // Bonjour Fatou, bienvenue !
+```
+
+Avantage : plus lisible que `"Bonjour " + nom + "!"`
+
+
+
+### 4. 🔍 **Utilisation de `typeof`**
+
+Permet de connaître le type d’une variable :
+
+```javascript
+let x = 5;
+console.log(typeof x);       // "number"
+console.log(typeof "hello"); // "string"
+console.log(typeof null);    // "object" (c'est un bug historique)
+```
+
+
+
+### 5. 🧮 **Concaténation et opérations**
+
+#### ➕ Concaténer des chaînes :
+
+```javascript
+let a = "Bonjour ";
+let b = "le monde";
+console.log(a + b); // Bonjour le monde
+```
+
+#### ➕ Concaténer une chaîne et un nombre :
+
+```javascript
+let nom = "Note : ";
+let note = 18;
+console.log(nom + note); // "Note : 18"
+```
+
+#### ➕ Addition de nombres :
+
+```javascript
+let x = 10;
+let y = 5;
+console.log(x + y); // 15
+```
+
+#### ✖️ Multiplication / ➗ Division :
+
+```javascript
+console.log(10 * 2); // 20
+console.log(20 / 4); // 5
+```
+
+
+
+### ✅ Récapitulatif express
+
+* Déclarez avec `let` ou `const`
+* Les types : Number, String, Boolean, Null, Undefined, Array, Object
+* `typeof` pour voir le type
+* Utilisez les backticks `` `...${}` `` pour des chaînes lisibles
+* Attention aux opérations entre types différents !
+
+
+🧠 Exercice – Variables et types en JavaScript
+🎯 Objectifs :
+
+    Déclarer différentes variables
+
+    Manipuler les types (chaînes, nombres, objets, tableaux…)
+
+    Utiliser typeof et les backticks
+
+📌 Consignes :
+
+    Déclare les variables suivantes :
+
+        Un prénom (chaîne)
+
+        Un âge (nombre)
+
+        Un statut actif (boolean)
+
+        Une variable non définie
+
+        Une variable nulle
+
+        Un tableau de 3 notes
+
+        Un objet "étudiant" contenant prénom, âge et les notes
+
+    Affiche dans la console le type de chaque variable avec typeof.
+
+    Utilise des backticks pour créer un message comme :
+
+    Bonjour [prénom], tu as [âge] ans. Voici tes notes : [tableau de notes]
+
+    Fais les opérations suivantes :
+
+        Additionne deux notes
+
+        Concatène le prénom avec une phrase du style " est un bon élève."
+
+        Multiplie l’âge par 2
+
